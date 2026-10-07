@@ -317,4 +317,154 @@
     font-size: 16px;
   }
 
+  /* FEATURED ITALY TRIP */
+
+.featured-trip {
+  min-height: 90vh;
+
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+
+  background: #111719;
+  color: #f5f0e7;
+}
+
+/* IMAGE */
+
+.trip-image {
+  min-height: 750px;
+  overflow: hidden;
+}
+
+.trip-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  object-fit: cover;
+
+  transition: transform 0.8s ease;
+}
+
+.trip-image:hover img {
+  transform: scale(1.025);
+}
+
+/* CONTENT */
+
+.trip-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 80px 10%;
+}
+
+.trip-location {
+  margin: 0 0 25px;
+
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 6px;
+
+  color: rgba(245, 240, 231, 0.55);
+}
+
+.trip-content h2 {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(50px, 5vw, 82px);
+  font-weight: 400;
+
+  line-height: 0.98;
+  letter-spacing: -2px;
+}
+
+.trip-divider {
+  width: 75px;
+  height: 1px;
+
+  margin: 35px 0;
+
+  background: rgba(245, 240, 231, 0.55);
+}
+
+.trip-tagline {
+  margin: 0 0 18px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 23px;
+  font-style: italic;
+}
+
+.trip-description {
+  max-width: 500px;
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 1.9;
+
+  color: rgba(245, 240, 231, 0.72);
+}
+
+.trip-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  margin: 36px 0;
+
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 3px;
+
+  color: rgba(245, 240, 231, 0.62);
+}
+
+.trip-button {
+  width: fit-content;
+
+  display: flex;
+  align-items: center;
+  gap: 45px;
+
+  padding: 17px 22px;
+
+  border: 1px solid rgba(245, 240, 231, 0.65);
+
+  color: #f5f0e7;
+  text-decoration: none;
+
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 3px;
+
+  transition: 0.25s ease;
+}
+
+.trip-button:hover {
+  background: #f5f0e7;
+  color: #111719;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+  .featured-trip {
+    grid-template-columns: 1fr;
+  }
+
+  .trip-image {
+    min-height: 60vh;
+  }
+
+  .trip-content {
+    padding: 70px 25px 90px;
+  }
+
+  .trip-content h2 {
+    font-size: 52px;
+  }
+}
 }
