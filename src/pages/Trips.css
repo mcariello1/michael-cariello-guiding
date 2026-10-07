@@ -1,0 +1,247 @@
+.trips-page {
+  min-height: 100vh;
+  background: #0d1113;
+  color: #f5f0e7;
+}
+
+/* NAV */
+
+.trips-header {
+  height: 120px;
+  padding: 0 6.5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid rgba(245, 240, 231, 0.12);
+}
+
+.trips-brand {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  color: #f5f0e7;
+  text-decoration: none;
+}
+
+.trips-logo {
+  width: 62px;
+  height: 62px;
+  object-fit: contain;
+}
+
+.trips-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.trips-name {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  white-space: nowrap;
+}
+
+.trips-title {
+  margin-top: 7px;
+
+  font-size: 8px;
+  letter-spacing: 4px;
+
+  color: rgba(245, 240, 231, 0.55);
+}
+
+.trips-header nav {
+  display: flex;
+  gap: 45px;
+}
+
+.trips-header nav a {
+  color: rgba(245, 240, 231, 0.75);
+  text-decoration: none;
+
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+/* PAGE */
+
+.trips-content {
+  padding: 90px 7% 120px;
+}
+
+.trips-eyebrow {
+  margin: 0 0 18px;
+
+  font-size: 10px;
+  letter-spacing: 6px;
+
+  color: rgba(245, 240, 231, 0.5);
+}
+
+.trips-content > h1 {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(65px, 7vw, 105px);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.trips-intro {
+  margin: 25px 0 65px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 19px;
+
+  color: rgba(245, 240, 231, 0.7);
+}
+
+/* TRIP CARD */
+
+.trip-card {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  width: 100%;
+  height: 650px;
+
+  overflow: hidden;
+
+  background: #151b1d;
+  color: #f5f0e7;
+  text-decoration: none;
+}
+
+/* IMAGE SIDE */
+
+.trip-card-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.trip-card-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  object-fit: cover;
+
+  transition: transform 0.8s ease;
+}
+
+.trip-card:hover .trip-card-image img {
+  transform: scale(1.03);
+}
+
+/* CONTENT SIDE */
+
+.trip-card-content {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 65px 55px;
+
+  background: #151b1d;
+}
+
+.trip-card-location {
+  margin: 0 0 28px;
+
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 5px;
+
+  color: rgba(245, 240, 231, 0.55);
+}
+
+.trip-card-content h2 {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(38px, 3.5vw, 58px);
+  font-weight: 400;
+
+  line-height: 0.98;
+  letter-spacing: -2px;
+}
+
+.trip-card-tagline {
+  margin: 25px 0 40px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.5;
+
+  color: rgba(245, 240, 231, 0.72);
+}
+
+.trip-card-details {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding-top: 22px;
+  margin-bottom: 35px;
+
+  border-top: 1px solid rgba(245, 240, 231, 0.18);
+
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 2px;
+
+  color: rgba(245, 240, 231, 0.5);
+}
+
+.trip-card-link {
+  align-self: flex-start;
+
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 3px;
+
+  color: #f5f0e7;
+
+  transition: transform 0.25s ease;
+}
+
+.trip-card:hover .trip-card-link {
+  transform: translateX(7px);
+}
+/* MOBILE */
+
+@media (max-width: 800px) {
+  .trips-header {
+    height: 90px;
+    padding: 0 25px;
+  }
+
+  .trips-header nav {
+    display: none;
+  }
+
+  .trips-content {
+    padding: 60px 25px 80px;
+  }
+
+  .trip-card {
+    height: 550px;
+  }
+
+  .trip-card-content {
+    left: 25px;
+    right: 25px;
+    bottom: 45px;
+  }
+
+  .trip-card-content h2 {
+    font-size: 45px;
+  }
+}

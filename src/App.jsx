@@ -1,4 +1,6 @@
+import { useState } from 'react'
 import './App.css'
+import MediterraneanTrip from './pages/MediterraneanTrip'
 
 function App() {
   return (
@@ -20,7 +22,7 @@ function App() {
         </div>
 
         <nav className="nav-links">
-          <a href="#trips">TRIPS</a>
+          <a href="/trips">TRIPS</a>
           <a href="#destinations">DESTINATIONS</a>
           <a href="#about">ABOUT</a>
           <a href="#contact">CONTACT</a>
@@ -64,7 +66,7 @@ function App() {
         <div className="scroll-indicator">⌄</div>
 
       </main>
-
+      
     </div>
   )
 }
