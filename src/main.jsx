@@ -6,6 +6,7 @@ import './index.css'
 import App from './App.jsx'
 import MediterraneanTrip from './pages/MediterraneanTrip.jsx'
 import Trips from './pages/Trips.jsx'
+import EasternSierraTrip from './pages/EasternSierraTrip.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -25,6 +26,10 @@ createRoot(document.getElementById('root')).render(
           path="/trips/mediterranean-coastal-climbing"
           element={<MediterraneanTrip />}
         />
+        <Route
+  path="/trips/eastern-sierra-ski-mountaineering"
+  element={<EasternSierraTrip />}
+/>
 
       </Routes>
     </BrowserRouter>

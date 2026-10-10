@@ -1,9 +1,10 @@
-import { useState } from 'react'
+
 import './App.css'
-import MediterraneanTrip from './pages/MediterraneanTrip'
 
 function App() {
+
   return (
+    
     <div className="site">
 
       <header className="navbar">

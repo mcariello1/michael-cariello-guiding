@@ -74,6 +74,45 @@ function Trips() {
     </span>
 
   </div>
+
+</a>
+
+<a
+  href="/trips/eastern-sierra-ski-mountaineering"
+  className="trip-card"
+>
+  <div className="trip-card-image">
+    <img
+      src="/images/eastern_sierra/hero.jpg"
+      alt="Eastern Sierra Ski Mountaineering"
+    />
+  </div>
+
+  <div className="trip-card-content">
+    <p className="trip-card-location">
+      EASTERN SIERRA · CALIFORNIA
+    </p>
+
+    <h2>
+      Eastern Sierra
+      <br />
+      Ski Mountaineering
+    </h2>
+
+    <p className="trip-card-tagline">
+      Big mountains. Classic lines. Endless possibilities.
+    </p>
+
+    <div className="trip-card-details">
+      <span>SKI MOUNTAINEERING</span>
+      <span>•</span>
+      <span>CALIFORNIA</span>
+    </div>
+
+    <span className="trip-card-link">
+      EXPLORE TRIP →
+    </span>
+  </div>
 </a>
 
       </main>
