@@ -23,11 +23,12 @@ function App() {
         </div>
 
         <nav className="nav-links">
-          <a href="/trips">TRIPS</a>
-          <a href="#destinations">DESTINATIONS</a>
-          <a href="#about">ABOUT</a>
-          <a href="#contact">CONTACT</a>
-        </nav>
+  <a href="/trips">TRIPS</a>
+  <a href="/mountain-journal">MOUNTAIN JOURNAL</a>
+  <a href="#destinations">DESTINATIONS</a>
+  <a href="#about">ABOUT</a>
+  <a href="#contact">CONTACT</a>
+</nav>
 
       </header>
 
